@@ -462,6 +462,7 @@ img{
 
 .large-hero{
     position: relative;
+    border-bottom:10px solid #2f5572;
 
 }
 
@@ -474,28 +475,55 @@ img{
         text-align:center;
     }
 
+.large-hero__image{
+        display: block;
+    }
+
 .large-hero__title{
         font-weight:300;
         color:#2f5572;
-        font-size:4.75rem;
+        font-size:2.5rem;
         margin:0;
+        
+    }
+
+@media (min-width:530px){
+
+.large-hero__title{
+            font-size:4.75rem
+        
+    }
     }
 
 .large-hero__subtitle{
         font-weight:300;
         color:#2f5572;
-        font-size:2.75rem;
+        font-size:1.5rem;
         margin:0;
+    }
+
+@media (min-width:530px){
+
+.large-hero__subtitle{
+            font-size:2.5rem
+    }
     }
 
 .large-hero__description{
         color:#fff;
-        font-size:1.875rem;
+        
         
         font-weight:100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
          max-width:30rem;
          margin:auto;
+    }
+
+@media (min-width:530px){
+
+.large-hero__description{
+            font-size:1.875rem
+    }
     }
 
 .btn{
@@ -511,8 +539,21 @@ img{
     }
 
 .btn__large{
-        font-size:1.25rem;
-        padding: 1.15rem 1.85rem;
+        
+        pading: 1.15rem 1.875rem;
 
     }
+
+@media (min-width:530px){
+
+.btn__large{
+            font-size:1.25rem
+
+    }
+    }
+
+.wrapper{
+    padding-left:16px;
+    padding-right:16px;
+}
 

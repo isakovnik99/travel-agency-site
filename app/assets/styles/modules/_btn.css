@@ -8,8 +8,12 @@
         background-color:$mainOrange;
     }
     &__large{
-        font-size:1.25rem;
-        padding: 1.15rem 1.85rem;
+        
+        pading: 1.15rem 1.875rem;
+
+        @mixin small{
+            font-size:1.25rem;
+        }
 
     }
 }
