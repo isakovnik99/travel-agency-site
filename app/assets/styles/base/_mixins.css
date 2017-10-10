@@ -2,9 +2,10 @@
     @media (min-width:530px){
         @mixin-content;
     }
+}
 
     @define-mixin medium{
-        @media (min-width:8000px){
+        @media (min-width:800px){
             @mixin-content;
         }
     }
@@ -13,5 +14,15 @@
             @mixin-content;
             
         }
+    }
+@define-mixin clearFix{
+    &::after{
+        content:"";
+        clear:both;
+        display :table;
+    } &::after{
+        content:"";
+        clear:both;
+        display :table;
     }
 }
