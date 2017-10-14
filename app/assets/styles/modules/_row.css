@@ -22,6 +22,10 @@
     
             width:66.66%;
         }
+        &__md6{
+            width:50%;
+            float:left;
+        }
         &__md4-larger{
             width:36.66%;
         }
@@ -30,9 +34,18 @@
         }
 
     }
+
     &__gutter{
         margin-right:-65px;
         
+    }
+    &__gutter-large{
+        margin-right:-100px;
+    }
+   
+   
+    &__gutter-large >div{
+        padding-right:100px;
     }
    
     &__gutter > div{
