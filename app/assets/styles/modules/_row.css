@@ -7,11 +7,42 @@
     &__b-margin-untill-medium{
         margin-bottom:1rem;
     }
+
+    &__t-padding{
+        padding-top:80px;
+    }
+    &__gutter{
+        margin-right:-65px;
+        
+    }
+    &__gutter-large{
+        margin-right:-100px;
+    }
+    &__gutter-small{
+        margin-right:-45px
+    }
+   
+   
+    &__gutter-large > div{
+        padding-right:100px;
+    }
+   
+    &__gutter > div{
+        padding-right:65px;
+        
+
+    }
+    &__gutter-small > div{
+        padding-right:45px;
+    }
+
     @mixin medium{
        
         &__b-margin-untill-medium{
             margin-bottom:0;
         }
+        
+    
         &__md4{
             float: left;
             width:33.33%;
@@ -35,22 +66,17 @@
 
     }
 
-    &__gutter{
-        margin-right:-65px;
-        
-    }
-    &__gutter-large{
-        margin-right:-100px;
-    }
-   
-   
-    &__gutter-large >div{
-        padding-right:100px;
-    }
-   
-    &__gutter > div{
-        padding-right:65px;
-        
+    /*equal height rules*/
+    &__equal-height-md{
+        @mixin medium{
+            display:flex;
+        }
 
+        & > div{
+            float:none;
+            display:flex;
+        }
     }
+
+   
 }

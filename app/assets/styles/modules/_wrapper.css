@@ -9,6 +9,15 @@
         }
 
     }
+    &__no-padding-untill-md{
+        padding-left:0;
+        padding-right:0;
+        @mixin medium{
+            padding-left:16px;
+            padding-right:16px;
+
+        }
+    }
   
 
     padding-left:16px;
