@@ -1,0 +1,63 @@
+.primary-nav{
+    
+    padding-top:10px;
+    \2mixin medium{
+        padding-top:0;
+    }
+
+
+    &__pull-right{
+
+        @mixin medium{
+            float:right;
+        }
+        
+    }
+
+    ul{
+        margin:0;
+        padding:0;
+        @mixin clearFix;
+    }
+
+    li{
+        
+
+        display: inline-block;
+        list-style: none;
+       
+        
+        padding-right:20px;
+       
+        @mixin medium{
+            display:block;
+            float:left;
+
+        }
+
+    }
+
+    li:last-child{
+        padding-right:0;
+        @mixin medium{
+            padding-right:20px;
+        }
+    }
+
+    a{
+        color:white;
+        display:block;
+        padding:12px 8px;
+        font-size:0.75rem;
+        text-decoration:none;
+        background-color: rgba($mainBlue, 0.75);
+      
+        @mixin medium{
+            padding:12px 0;
+    
+            background-color: transparent;
+
+        }
+        
+    }
+}
