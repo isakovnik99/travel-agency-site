@@ -702,6 +702,7 @@ a{
 
 .wrapper__no-padding-untill-md{
             padding-left:16px;
+
             padding-right:16px
     }
         }
@@ -1359,12 +1360,23 @@ a{
 @media (min-width:800px){
 
 .primary-nav a{
-            padding:12px 0;
+            padding:0px 12px;
+            font-size:1rem;
     
             background-color: transparent
         
     }
         }
 
+.reveal-item{
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    opacity:0;
+}
+
+.reveal-item__is-visible{
+        opacity:1;
+        
+    }
 
 
