@@ -10,7 +10,12 @@
     padding:8px 0; 
     z-index: 2;
     @mixin medium{
+
+        &__dark{
+            background-color: rgba(23,51,72,.8);
+        }
     background-color: rgba($mainBlue, 0.3);
+    position:fixed;
     }
     width:100%;
 
@@ -27,11 +32,18 @@
         padding: 24px 36px;
         left:50%;
         transform: translateX(-50%) scale(0.8);
+        transition: transform .5s ease-out;
         transform-origin: 50% 0;
         @mixin medium{
+
             left:auto;
             transform:translateX(0);
+
+            .site-header__dark &{
+                transform: scale(.55);
+            }
         }
+
         top:0;
         
 

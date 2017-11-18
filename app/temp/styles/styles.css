@@ -1130,10 +1130,15 @@ a{
 @media (min-width:800px){
 
 .site-header{
-    background-color: rgba(47,85,114, 0.3)
+    background-color: rgba(47,85,114, 0.3);
+    position:fixed
 
 
 }
+
+        .site-header__dark{
+            background-color: rgba(23,51,72,.8);
+        }
         }
 
 @media (min-width:800px){
@@ -1150,8 +1155,13 @@ a{
         left:50%;
         -webkit-transform: translateX(-50%) scale(0.8);
                 transform: translateX(-50%) scale(0.8);
+        -webkit-transition: -webkit-transform .5s ease-out;
+        transition: -webkit-transform .5s ease-out;
+        transition: transform .5s ease-out;
+        transition: transform .5s ease-out, -webkit-transform .5s ease-out;
         -webkit-transform-origin: 50% 0;
                 transform-origin: 50% 0;
+
         top:0;
         
 
@@ -1160,12 +1170,18 @@ a{
 @media (min-width:800px){
 
 .site-header__logo{
+
             left:auto;
             -webkit-transform:translateX(0);
                     transform:translateX(0);
         
 
     }
+
+            .site-header__dark .site-header__logo{
+                -webkit-transform: scale(.55);
+                        transform: scale(.55);
+            }
         }
 
 .site-header__logo__graphic{
@@ -1360,12 +1376,17 @@ a{
 @media (min-width:800px){
 
 .primary-nav a{
+
             padding:0px 12px;
             font-size:1rem;
     
             background-color: transparent
         
     }
+
+            .primary-nav a.is-current-link{
+                color:#fabb69;
+            }
         }
 
 .reveal-item{
